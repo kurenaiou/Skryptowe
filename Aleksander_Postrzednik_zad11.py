@@ -26,7 +26,7 @@ while (iteracja < limit):
         p1.close()
 
     elif znacznik == 2:
-        p2 = open("file2.txt", "w", encoding='utf-8')
+        p2 = open("plik_2.txt", "w", encoding='utf-8')
         while (zapisane_dane < 100 * iteracja ):
             bufor += string [zapisane_dane]
             zapisane_dane += 1
@@ -38,7 +38,7 @@ while (iteracja < limit):
         p2.close()
 
     elif znacznik == 3:
-        p3 = open("file3.txt", "w", encoding='utf-8')
+        p3 = open("plik_3.txt", "w", encoding='utf-8')
         while (zapisane_dane < 100 * iteracja ):
             bufor += string [zapisane_dane]
             zapisane_dane += 1

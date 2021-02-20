@@ -2,9 +2,16 @@ import random
 
 names_list = ['Damian', 'Ola', 'Barbara', 'Robert', 'Zygmunt', 'Ewa']
 first_letter_list = []
-first_letter_list = [list for element in range(list_len)]
+for letter in names_list:
+    first_letter_list.append(letter[0])
 print(first_letter_list)
 
 
-list_of_lists = [random.randint(1, 10) for element in range(4) for in range(5)]
+list_of_lists = []
+for n in range(5):
+    list=[]
+    for n in range(4):
+        list.append(random.randint(1, 10))
+    list_of_lists.append(list)
+
 print(list_of_lists)
