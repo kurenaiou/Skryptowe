@@ -1,1 +1,0 @@
-#Proszę znaleźć wszystkie wyrazy, które składają się z przynajmniej czterech znaków.

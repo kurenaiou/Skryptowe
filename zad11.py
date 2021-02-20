@@ -1,1 +1,0 @@
-#Proszę napisać program, który będzie dopisywał do pliku dowolny tekst do rozmiaru 100 bajtów
