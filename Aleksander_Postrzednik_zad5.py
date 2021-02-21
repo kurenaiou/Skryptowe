@@ -6,7 +6,6 @@ for letter in names_list:
     first_letter_list.append(letter[0])
 print(first_letter_list)
 
-
 list_of_lists = []
 for n in range(5):
     list=[]

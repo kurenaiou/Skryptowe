@@ -1,11 +1,10 @@
-#odczytac zawartosc pliku i zapisac w drugim
-with open('input.txt') as f:
-    try:
-        with open('input.txt') as input_file:
-            data = input_file.read()
-        with open('output.txt', 'w') as output_file:
-            output_file.write(data)
-    except:
-        print("cos poszlo nie tak !")
-    finally:
-        print(data)
+try:
+    with open("input.txt", 'r') as input:
+        with open("output.txt",'w') as output:
+            for line in input:
+                output.write(line)
+except IOError as e:
+    print(f"Operation error: {e.strerror}")
+
+#finally:
+#    print(data)

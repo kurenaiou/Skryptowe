@@ -1,15 +1,5 @@
-def string_k(k, bridge_of_death):
-    string = []
+import re
 
-    text = bridge_of_death.split(' ')
-
-    for x in text:
-        if len(x) >= k:
-            string.append(x)
-    return string
-
-
-k = 4
 bridge_of_death = '''
 -Jaki jest twój ulubiony kolor?
 -Niebieski!
@@ -23,11 +13,6 @@ bridge_of_death = '''
 -Niebieski... nie... żóóóółtyyyy!
 '''
 
-bad_chars = ['.', '-', '!', "?"]
-
-for i in bad_chars:
-    bridge_of_death = bridge_of_death.replace(i, '')
-
-bridge_of_death = bridge_of_death.replace("\n", " ")
-
-print(string_k(k, bridge_of_death))
+standard_pattern = re.compile(r'(\b\w{4,}\b)')
+words_in_sentence = set(standard_pattern.findall(bridge_of_death))
+print(words_in_sentence)
